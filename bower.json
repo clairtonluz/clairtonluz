@@ -1,0 +1,28 @@
+{
+  "name": "clairtonluz",
+  "version": "0.0.0",
+  "authors": [
+    "clairtonluz <clairton.c.l@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "homepage": "blog.clairtonluz.com.br",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "~4.4.0"
+  }
+}

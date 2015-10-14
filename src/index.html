@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <link id="theme-style" rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-app="clairtonLuzApp">
+<!--[if lt IE 8]>
+<p class="browserupgrade">Você está utilizando um navegador <strong>desatualizado</strong>. Por favor <a href="http://browsehappy.com/">atualizer seu navegador</a> para melhorar sua experiência.</p>
+<![endif]-->
+
+<div ng-include='"templates/header.html"'></div>
+<div ng-include='"templates/menu.html"'></div>
+<div class="container sections-wrapper">
+    <div class="row">
+        <div class="primary col-md-8 col-sm-12 col-xs-12">
+            <div ng-view></div>
+        </div>
+        <!--//primary-->
+        <div class="secondary col-md-4 col-sm-12 col-xs-12">
+            <div ng-include='"partials/widget/info.html"'></div>
+            <div ng-include='"partials/widget/skill.html"'></div>
+            <div ng-include='"partials/widget/testimonials.html"'></div>
+            <div ng-include='"partials/widget/education.html"'></div>
+            <div ng-include='"partials/widget/languages.html"'></div>
+            <div ng-include='"partials/widget/blog-posts.html"'></div>
+            <div ng-include='"partials/widget/list-music.html"'></div>
+            <div ng-include='"partials/widget/conferences.html"'></div>
+            <div ng-include='"partials/widget/credits.html"'></div>
+        </div>
+        <!--//secondary-->
+    </div>
+    <!--//row-->
+</div>
+<!--//masonry-->
+<div ng-include='"templates/footer.html"'></div>
+
+<!-- custom js -->
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+<script type="text/javascript" src="js/theme/main.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="templates/page.controller.js"></script>
+
+
+</body>
+</html>
