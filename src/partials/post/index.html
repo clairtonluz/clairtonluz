@@ -1,0 +1,38 @@
+<section class="latest section">
+    <div class="section-inner">
+
+        <div class="content" ng-hide="post">
+            <h2>Nenhum post encontrado</h2>
+        </div>
+        <div class="content" ng-show="post">
+            <div class="item featured text-center">
+                <h3 class="title"><a
+                    href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/"
+                    target="_blank">{{post.title}}</a></h3>
+
+                <p class="summary">{{post.summary}}</p>
+
+                <div class="desc text-left">
+                    <div class="featured-image">
+
+                        <img class="img-responsive project-image" ng-src="{{post.image}}" alt="post image"/>
+
+                        <div class="ribbon">
+                            <div class="text">Novo</div>
+                        </div>
+                    </div>
+
+                    <div ng-bind-html="post.content"></div>
+                </div>
+
+                <a class="btn btn-cta-secondary" href="#/"><i class="fa fa-thumbs-o-up"></i> Voltar para o
+                    início</a>
+            </div>
+            <!--//item-->
+
+        </div>
+        <!--//content-->
+    </div>
+    <!--//section-inner-->
+</section>
+<!--//section-->
