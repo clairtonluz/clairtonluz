@@ -2,11 +2,11 @@
  * Created by clairton on 15/10/15.
  */
 angular.module('clairtonLuzApp')
-    .controller('PostCtrl', ['$scope', '$routeParams', 'PostAPI', function ($scope, $routeParams, PostAPI) {
+    .controller('PostCtrl', ['$scope', '$location', '$routeParams', 'PostAPI', function ($scope, $location, $routeParams, PostAPI) {
 
         /*Declaração dos metodos*/
         var findById = _findById;
-        $scope.save = _save;
+        this.save = _save;
 
         /*Lógica do controller*/
         if ($routeParams.id) {
@@ -19,9 +19,11 @@ angular.module('clairtonLuzApp')
         }
 
         function _save(post) {
-            console.log('yes')
-            PostAPI.save(post);
-
+            PostAPI.save(post, function(data) {
+                console.log('redirec')
+                console.log(data);
+                $location.url('/post/' + data._id + '/view')
+            });
         }
 
     }]);
