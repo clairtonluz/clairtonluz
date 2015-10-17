@@ -1,32 +1,55 @@
 <section class="latest section">
     <div class="section-inner">
 
-        <div class="content" ng-show="post">
+        <div class="content">
             <div class="item featured text-center">
-                <h3 class="title">
-                    {{post.title}}
-                </h3>
-
-                <p class="summary">{{post.summary}}</p>
-
-                <div class="desc text-left">
-                    <div class="featured-image">
-
-                        <img class="img-responsive project-image" ng-src="{{post.image}}" alt="post image"/>
-
-                        <div class="ribbon">
-                            <div class="text">Novo</div>
-                        </div>
+                <form role="form" ng-submit="save(post)">
+                    <div class="form-group">
+                        <label for="title">Título</label>
+                        <input ng-model="post.title" type="text" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="image">Imagem</label>
+                        <input ng-model="post.image" type="text" class="form-control" id="image">
+                    </div>
+                    <div class="form-group">
+                        <label for="summary">Resumo</label>
+                        <textarea ng-model="post.summary" type="text" rows="5" class="form-control"
+                                  id="summary"></textarea>
                     </div>
 
-                    <div ng-bind-html="post.content"></div>
-                </div>
+                    <div class="form-group">
+                        <label for="content">Conteúdo</label>
+                                <textarea ng-model="post.content" type="text" rows="5" class="form-control"
+                                          id="content"></textarea>
+                    </div>
 
-                <a class="btn btn-cta-secondary" href="#/">
-                    <i class="fa fa-thumbs-o-up"></i> Voltar para o início
-                </a>
+                    <button type="submit" class="btn btn-success" >Publicar</button>
+                    <a href="#/" class="btn btn-danger">Excluir</a>
+                </form>
             </div>
             <!--//item-->
+
+            <h2>Preview</h2>
+            <hr/>
+            <div class="content" ng-show="post">
+                <div class="item featured text-center">
+                    <h3 class="title">{{post.title}}</h3>
+
+                    <p class="summary">{{post.summary}}</p>
+
+                    <div class="desc text-left">
+                        <div class="featured-image" ng-show="post.image">
+                            <img class="img-responsive project-image" ng-src="{{post.image}}" alt="post image"/>
+                        </div>
+
+                        <div ng-bind-html="post.content | htmlParse"></div>
+                    </div>
+                </div>
+                <!--//item-->
+
+            </div>
+            <!--//content-->
 
         </div>
         <!--//content-->

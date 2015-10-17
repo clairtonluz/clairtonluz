@@ -6,15 +6,22 @@ angular.module('clairtonLuzApp')
 
         /*Declaração dos metodos*/
         var findById = _findById;
+        $scope.save = _save;
 
         /*Lógica do controller*/
-        findById($routeParams.id);
+        if ($routeParams.id) {
+            findById($routeParams.id);
+        }
 
         /*implementação dos metodos*/
         function _findById(id) {
-            if (id) {
-                $scope.post = PostAPI.get({id: id});
-            }
+            $scope.post = PostAPI.get({id: id});
+        }
+
+        function _save(post) {
+            console.log('yes')
+            PostAPI.save(post);
+
         }
 
     }]);

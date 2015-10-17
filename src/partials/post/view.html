@@ -3,25 +3,23 @@
         <div class="alert alert-danger" role="alert" ng-show="message">{{message}}</div>
         <div class="content" ng-show="post">
             <div class="item featured text-center">
-                <h3 class="title">
-                    {{post.title}}
-                </h3>
+
+                <h3 class="title"> {{post.title}}</h3>
 
                 <p class="summary">{{post.summary}}</p>
 
                 <div class="desc text-left">
-                    <div class="featured-image">
-
+                    <div class="featured-image" ng-show="post.image">
                         <img class="img-responsive project-image" ng-src="{{post.image}}" alt="post image"/>
-
-                        <div class="ribbon">
-                            <div class="text">Novo</div>
-                        </div>
                     </div>
 
                     <div ng-bind-html="post.content"></div>
                 </div>
 
+                <div>
+                    By: {{post.createBy}} - {{post.createAt | date}}
+                </div>
+                </br>
                 <a class="btn btn-cta-secondary" href="#/">
                     <i class="fa fa-thumbs-o-up"></i> Voltar para o início
                 </a>

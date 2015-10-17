@@ -5,6 +5,12 @@ angular.module('clairtonLuzApp', [
     'ngResource',
     'ngSanitize'
 ])
+    .
+    filter('toTrusted', function ($sce) {
+        return function (value) {
+            return $sce.trustAsHtml(value);
+        };
+    })
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
             .when('/', {templateUrl: 'partials/home', controller: 'HomeCtrl'})
