@@ -6,9 +6,9 @@
         </div>
         <div class="content" ng-show="post">
             <div class="item featured text-center">
-                <h3 class="title"><a
-                    href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-products-velocity/"
-                    target="_blank">{{post.title}}</a></h3>
+                <h3 class="title">
+                    {{post.title}}
+                </h3>
 
                 <p class="summary">{{post.summary}}</p>
 
@@ -25,8 +25,9 @@
                     <div ng-bind-html="post.content"></div>
                 </div>
 
-                <a class="btn btn-cta-secondary" href="#/"><i class="fa fa-thumbs-o-up"></i> Voltar para o
-                    início</a>
+                <a class="btn btn-cta-secondary" href="#/">
+                    <i class="fa fa-thumbs-o-up"></i> Voltar para o início
+                </a>
             </div>
             <!--//item-->
 

@@ -4,6 +4,6 @@
 angular.module('clairtonLuzApp')
     .factory('PostAPI', ['$resource',
         function ($resource) {
-            return $resource('/clairtonluz/src/partials/post/post:id.json', {id: '@id'});
+            return $resource('http://localhost:9000/api/posts/:id', {id: '@_id'});
         }
     ]);

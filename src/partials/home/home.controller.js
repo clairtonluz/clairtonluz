@@ -12,7 +12,13 @@ angular.module('clairtonLuzApp')
 
         /*implementação dos metodos*/
         function _findAll() {
-            $scope.posts = PostAPI.query();
+            PostAPI.query(function(res){
+                $scope.posts = res;
+            },
+            function(err) {
+                console.log('ERRRRR');
+                console.log(err);
+            });
         }
 
     }]);
