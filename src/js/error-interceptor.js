@@ -1,6 +1,7 @@
 /**
  * Created by clairton on 17/10/15.
  */
+/* global angular: false */
 angular.module('clairtonLuzApp').factory('ErrorInterceptor', ['$q', function ($q) {
     return {
         responseError: function (rejection) {
