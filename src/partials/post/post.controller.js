@@ -2,7 +2,7 @@
  * Created by clairton on 15/10/15.
  */
 angular.module('clairtonLuzApp')
-    .controller('PostCtrl', ['$scope', '$location', '$routeParams', 'PostAPI', function ($scope, $location, $routeParams, PostAPI) {
+    .controller('PostCtrl', ['$scope', '$routeParams', 'PostAPI', function ($scope, $routeParams, PostAPI) {
 
         /*Declaração dos metodos*/
         var findById = _findById;
