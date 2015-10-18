@@ -13,7 +13,7 @@
     "node",
     "yui"
   ],
-  "license": "MIT",
+  "license": "NONE",
   "homepage": "blog.clairtonluz.com.br",
   "ignore": [
     "**/.*",

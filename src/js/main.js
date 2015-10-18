@@ -1,5 +1,6 @@
 /* global angular: false */
-var config = {URL: 'http://localhost:9000'};
+//var config = {URL: 'http://localhost:9000'};
+var config = {URL: 'https://clairtonluz-server.herokuapp.com'};
 angular.module('clairtonLuzApp', [
     'ngRoute',
     'ngResource',
