@@ -27,8 +27,8 @@
 <p class="browserupgrade">Você está utilizando um navegador <strong>desatualizado</strong>. Por favor <a href="http://browsehappy.com/">atualizer seu navegador</a> para melhorar sua experiência.</p>
 <![endif]-->
 
-<div ng-include='"templates/header.html"'></div>
-<div ng-include='"templates/menu.html"'></div>
+<div ng-include='"app/templates/header.html"'></div>
+<div ng-include='"app/templates/menu.html"'></div>
 <div class="container sections-wrapper">
     <div class="row">
         <div class="primary col-md-8 col-sm-12 col-xs-12">
@@ -36,17 +36,17 @@
         </div>
         <!--//primary-->
         <div class="secondary col-md-4 col-sm-12 col-xs-12">
-            <div ng-include='"partials/widget/info.html"'></div>
-            <div ng-include='"partials/widget/skill.html"'></div>
-            <div ng-include='"partials/widget/education.html"'></div>
-            <div ng-include='"partials/widget/languages.html"'></div>
+            <div ng-include='"app/partials/widget/info.html"'></div>
+            <div ng-include='"app/partials/widget/skill.html"'></div>
+            <div ng-include='"app/partials/widget/education.html"'></div>
+            <div ng-include='"app/partials/widget/languages.html"'></div>
         </div>
         <!--//secondary-->
     </div>
     <!--//row-->
 </div>
 <!--//masonry-->
-<div ng-include='"templates/footer.html"'></div>
+<div ng-include='"app/templates/footer.html"'></div>
 
 <!-- custom js -->
 
@@ -64,19 +64,19 @@ s
 <script src="js/plugins.js"></script>
 <script src="plugins/rainbow/js/rainbow.min.js"></script>
 <script src="plugins/rainbow/js/language/shell.js"></script>
-<script src="js/main.js"></script>
-<script src="js/error-interceptor.js"></script>
+<script src="app/main.js"></script>
+<script src="app/interceptors/error-interceptor.js"></script>
 
 
-<script src="templates/page.controller.js"></script>
+<script src="app/templates/page.controller.js"></script>
 
-<script src="partials/home/home.controller.js"></script>
-<script src="partials/post/post.js"></script>
-<script src="partials/post/post.controller.js"></script>
-<script src="partials/post/post.view.controller.js"></script>
-<script src="partials/post/post.service.js"></script>
+<script src="app/partials/home/home.controller.js"></script>
+<script src="app/partials/post/post.js"></script>
+<script src="app/partials/post/post.controller.js"></script>
+<script src="app/partials/post/post.view.controller.js"></script>
+<script src="app/partials/post/post.service.js"></script>
 
-<script src="js/filters/html.parse.filter.js"></script>
+<script src="app/filters/html.parse.filter.js"></script>
 
 
 </body>

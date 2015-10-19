@@ -14,9 +14,9 @@ angular.module('clairtonLuzApp', [
     })
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/', {templateUrl: 'partials/home', controller: 'HomeCtrl'})
-            .when('/about', {templateUrl: 'partials/about.html', controller: 'PageCtrl'})
-            .when('/404', {templateUrl: 'partials/404.html', controller: 'PageCtrl'})
+            .when('/', {templateUrl: 'app/partials/home', controller: 'HomeCtrl'})
+            .when('/about', {templateUrl: 'app/partials/about.html', controller: 'PageCtrl'})
+            .when('/404', {templateUrl: 'app/partials/404.html', controller: 'PageCtrl'})
             .otherwise('/404');
     }])
     .constant("config", config);
