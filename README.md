@@ -5,8 +5,6 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=clairtonluz" alt="clairtonluz" /></a> </p>
 
-- 📝 I regularly write articles on [https://blog.4us.dev](https://blog.4us.dev)
-
 - 📫 How to reach me **clairton.c.l@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
