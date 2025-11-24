@@ -1,7 +1,6 @@
 # 👋 Hi, I’m **Clairton Luz**
 
-### 🔧 Software Engineer | Architect | Full‑Stack Developer
-
+### 🔧 Software Engineer | Architect
 I'm a Software Engineer and Architect from Caucaia, Ceará, Brazil, with robust experience in backend, microservices, cloud and secure software design. I work with modern Java, Spring Boot, containerization, and have a keen interest in developing reliable and secure systems.
 
 ---
@@ -38,6 +37,11 @@ I'm a Software Engineer and Architect from Caucaia, Ceará, Brazil, with robust 
 - **Email**: clairton.c.l@gmail.com  
 - **Blog**: [clairtonluz.github.io](https://clairtonluz.github.io/)  
 - **LinkedIn**: [Clairton Luz](https://www.linkedin.com/in/clairtonluz/)
+
+---
+
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/clairtonluz"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="clairtonluz" /></a></p><br><br>
 
 ---
 
